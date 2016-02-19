@@ -10,6 +10,7 @@ server.listen(3000);
 
 mongoose.connect('mongodb://rioemployer:15151515@ds011248.mongolab.com:11248/riotest', function(err){
 	if(err){
+		console.log('Connection failed');
 		console.log(err);
 	} else{
 		console.log('Connected to the database');
