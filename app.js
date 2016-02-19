@@ -8,7 +8,7 @@ var express  = require('express');
 
 server.listen(3000);
 
-mongoose.connect('mongodb://wa05:15151515@ds011248.mongolab.com:11248/riotest', function(err){
+mongoose.connect('mongodb://rioemployer:15151515@ds011248.mongolab.com:11248/riotest', function(err){
 	if(err){
 		console.log(err);
 	} else{
