@@ -6,7 +6,7 @@ var express  = require('express');
 	mongoose = require('mongoose');	
 	users = {};
 
-server.listen(3000);
+server.listen(process.env.PORT || 5000);
 
 mongoose.connect('mongodb://rioemployer:15151515@ds011248.mongolab.com:11248/riotest', function(err){
 	if(err){
